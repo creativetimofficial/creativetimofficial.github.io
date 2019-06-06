@@ -1,0 +1,215 @@
+body {
+    background-color: #FFFFFF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: 'Helvetica Neue', arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 180px;
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+h2{
+    color: #FFFFFF;
+    font-weight: 200;
+    margin-top: 60px;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+h4{
+    color: #FFFFFF;
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.background .container{
+    padding-top: 110px;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: #2C93FF
+}
+
+.background{
+    min-height: 100vh;
+    position: relative;
+}
+
+.background:before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .6;
+    content: "";
+    left: 0;
+    top: 0;
+}
+.card{
+    background: #FFFFFF;
+    border-radius: 6px;
+
+    -webkit-transition: all 300ms cubic-bezier(0.34, 2, 0.6, 1);
+    -moz-transition: all 300ms cubic-bezier(0.34, 2, 0.6, 1);
+    -o-transition: all 300ms cubic-bezier(0.34, 2, 0.6, 1);
+    -ms-transition: all 300ms cubic-bezier(0.34, 2, 0.6, 1);
+    transition: all 300ms cubic-bezier(0.34, 2, 0.6, 1);
+
+    margin-bottom: 10px;
+}
+.card a{
+    text-decoration: none;
+    color: #333333;
+    padding: 30px 15px;
+    display: block;
+}
+.card i{
+    color: #777777;
+}
+.card h4{
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #333333;
+}
+.card:hover{
+    -webkit-transform: translateY(-7px);
+    -moz-transform: translateY(-7px);
+    -o-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    transform: translateY(-7px);
+}
+.card .card-icon{
+    font-size: 60px;
+}
+
+.navbar a .fa{
+    font-size: 20px;
+    top: 2px;
+    position: relative;
+    margin-top: -2px;
+}
+.navbar-transparent{
+      background-color: transparent;
+      box-shadow: none;
+      border: 0;
+      color: #fff;
+      padding-top: 25px;
+}
+.navbar-transparent a{
+    opacity: .8;
+    color: #FFFFFF;
+}
+.navbar-transparent a:hover{
+    opacity: 1;
+}
+
+.navbar-transparent .navbar-nav > li > a,
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:focus{
+    color: inherit;
+}
+.navbar .navbar-brand{
+    padding: 0px 15px;
+    position: relative;
+    opacity: 1;
+}
+.navbar .logo{
+    border-radius: 50%;
+    border: 1px solid #333;
+    display: block;
+    height: 61px;
+    width: 61px;
+    float: left;
+    overflow: hidden;
+}
+.navbar .logo img{
+    width: 60px;
+    height: 60px;
+}
+.navbar .navbar-brand p{
+    float: left;
+    font-size: 20px;
+    margin: 10px 10px;
+    color: #FFFFFF;
+    font-weight: 300;
+    text-align: left;
+}
+
+@media (min-width: 991px){
+    .container-cards [class*="col-md-"]{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.coupon-box	.card-icon{
+    color: #777777;
+}
+
+.card-credit .card{
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    margin-top: 25px;
+}
+
+.card-credit .card:hover{
+    transform: none;
+}
+
+.card-credit .card-header{
+    padding-top: 20px;
+    color: #5c96f0;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.card-credit .card-body .card-body-icon{
+    width: 90px;
+    height: 90px;
+    margin-left: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+.card-credit .card-body .card-text-icon{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+    left: 0;
+    right: 0;
+}
+
+.card-credit .card-body .card-description{
+    padding: 10px;
+    font-size: 10px;
+    color: #999999;
+    padding-bottom: 20px;
+}
+.card-credit .card-subheader{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#coupon50 .modal-footer,
+#coupon10 .modal-footer
+{
+    text-align: center;
+}
+
+
+.modal-footer .btn-footer{
+    background-color: #5c96f0;
+    border-color: #5c96f0;
+    border-radius: 30px;
+}
